@@ -1,8 +1,8 @@
 {
   "name": "gulp-project",
   "version": "1.0.0",
-  "description": "",
-  "author": "Buhowski",
+  "description": "description",
+  "author": "buhowski",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
