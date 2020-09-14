@@ -1,3 +1,17 @@
+@import "variables";
+@import "mixins";
+
 body {
-	background: #ddd;
+	background: $green;
+	@include mobile {
+		background: $red;
+	}
+}
+
+.d-flex {
+	@include d-flex;
+}
+
+.btn {
+	@include btn(#000, #999);
 }

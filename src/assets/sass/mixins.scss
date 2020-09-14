@@ -1,0 +1,18 @@
+@mixin d-flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@mixin btn($btn, $btn-hover) {
+	background-color: $btn;
+	&:hover {
+		background-color: $btn-hover;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
