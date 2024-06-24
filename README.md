@@ -109,7 +109,7 @@ img(alt="Awesome dog" width="100" href=`${baseUrl}/image/cool-dog.jpg`)
 
 The project requires NodeJS v.4+
  ``` "engines" : { 
-    "node" : ">=8.0.0 <11.0.0" 
+    "node" : ">=20" 
   },```
 
 ## Installation
