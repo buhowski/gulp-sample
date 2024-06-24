@@ -1,0 +1,48 @@
+// Color Variables
+$black: #000000;
+$white: #ffffff;
+$primary-color: #3c3c43;
+
+
+// Typography Variables
+$font-family: 'SF Pro Text', sans-serif;
+$second-family: 'SF Pro Display', sans-serif;
+$base-font-size: 1rem;
+$base-line-height: 1.2;
+$medium: 500;
+$semibold: 600;
+$bold: 800;
+
+// Border Variables
+$border-radius: 16px;
+$border: 0.5px solid rgba($borders-color, 1);
+$box-shadow: 0 2px 3px rgba($black, 0.03);
+
+// Z-index
+$zIndex-modal: 1050;
+
+// Breakpoints
+$breakpoint-small: 360px;
+$breakpoint-medium: 620px;
+
+// Transition timing
+$transition-time: 0.3s;
+
+// Mixins for media queries
+@mixin respond-to($breakpoint) {
+	@if $breakpoint == small {
+		@media (max-width: $breakpoint-small) {
+			@content;
+		}
+	} @else if $breakpoint == medium {
+		@media (max-width: $breakpoint-medium) {
+			@content;
+		}
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: 1440px) {
+		@content;
+	}
+}
